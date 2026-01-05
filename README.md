@@ -6,8 +6,9 @@ Built using embedded software package STM32U5 v1.8 and STM32CUDEIDE v1.19.0<br>
 This project is tested on the NUCLEO-U545RE-Q board.<br>
 USB Pen drive must be formatted to FAT32.<br>
 
-The classic Middleware versions are ST USB Host Lib V3.5.1. and FatFs VR0.12c (ST modified 2023-08-18).
-The classic Middlewares are copied over from an F439 project built using embedded software package STM32F4 v1.28.3
+The classic Middleware versions are ST USB Host Lib V3.5.1. and FatFs VR0.12c (ST modified 2023-08-18).<br>
+The classic Middlewares are copied over from an F439 project built using embedded software package STM32F4 v1.28.3 <br>
+Ref: https://github.com/NereusF1/stm32f439-usb-host-fatfs<br>
 
 To check functionality using Debug :<br>
 Add Appli_state and USBWriteOpEnable to the Live Expressions Watch Window.<br>
