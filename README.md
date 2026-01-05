@@ -2,9 +2,9 @@
 
 stm32u545 support for Classic Middleware STM32 Usb_Host and FatFs to access a USB Pen Drive.
 
-Built using embedded software package STM32U5 v1.8 and STM32CUDEIDE v1.19.0
-This project is tested on the NUCLEO-U545RE-Q board.
-USB Pen drive must be formatted to FAT32.
+Built using embedded software package STM32U5 v1.8 and STM32CUDEIDE v1.19.0<br>
+This project is tested on the NUCLEO-U545RE-Q board.<br>
+USB Pen drive must be formatted to FAT32.<br>
 
 The classic Middleware versions are ST USB Host Lib V3.5.1. and FatFs VR0.12c (ST modified 2023-08-18).
 The classic Middlewares are copied over from an F439 project built using embedded software package STM32F4 v1.28.3
