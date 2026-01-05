@@ -1,0 +1,19 @@
+U545 support for USB Pen Drive using the classic Middlewares - ST USB Host Lib and FatFs
+
+The classic Middlewares are copied over from an F439 project built using embedded software package STM32F4 v1.28.3
+The classic Middleware versions are ST USB Host Lib V3.5.1. and FatFs VR0.12c (ST modified 2023-08-18).
+
+Built using embedded software package STM32U5 v1.8 and STM32CUDEIDE v1.19.0
+This project is tested on the NUCLEO-U545RE-Q board.
+USB Pen drive must be formatted to FAT32.
+
+To check functionality using Debug :
+Add Appli_state and USBWriteOpEnable to the Live Expressions Watch Window.
+Appli_state will be APPLICATION_DISCONNECT initially when the USB Pen Drive is not connected.
+On Connecting the USB Pen Drive the Appli_state changes to APPLICATION_READY
+From the Watch Window set USBWriteOpEnable to 1. It will be immediately set back to 0 indicating sucessful operation.
+Unplug the USB Pen Drive and the Appli_state changes back to APPLICATION_DISCONNECT .
+Plug-in the USB Pen drive into the PC and check it's contents - TEMP.txt file containing the line "Welcome to EmbeTronicX!!!"
+
+
+
