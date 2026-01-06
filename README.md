@@ -1,6 +1,6 @@
 # stm32u545-classic-coremw-usb-host-fatfs
 
-stm32u545 support for Classic Middleware STM32 Usb_Host and FatFs to access a USB Pen Drive.
+stm32u545 support for Classic Middleware STM32 Usb_Host MSC and FatFs to access a USB Pen Drive.
 
 Built using embedded software package STM32U5 v1.8 and STM32CUDEIDE v1.19.0<br>
 This project is tested on the NUCLEO-U545RE-Q board.<br>
