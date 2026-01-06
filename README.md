@@ -21,11 +21,11 @@ Ref: https://github.com/NereusF1/stm32f439-usb-host-fatfs<br>
 If interested in studying the changes made in the middleware, you can do a diff between the files in these two repositories.<br>
 The changes were summarized below :<br>
 a. replacing #include "stm32f4xx_hal.h" to #include "stm32u5xx_hal.h"<br>
-b. replacing the F439 variables with equivalent U545 variables USB_OTG_FS  -> USB_DRD_FS<br>
+b. replacing the F439 variables with equivalent U545 variables USB_OTG_FS  => USB_DRD_FS<br>
 c. In ../USB_HOST/Target/usbh_conf.c<br>
-1.  hhcd_USB_OTG_FS -> hhcd_USB_DRD_FS <br>
-2.  USB_OTG_FS -> USB_DRD_FS <br>
-3.  if(pHandle->hc[pipe].ep_is_in) -> if(pHandle->hc[pipe].ch_dir) <br>
+1.  hhcd_USB_OTG_FS => hhcd_USB_DRD_FS <br>
+2.  USB_OTG_FS => USB_DRD_FS <br>
+3.  if(pHandle->hc[pipe].ep_is_in) => if(pHandle->hc[pipe].ch_dir) <br>
 4.  Commented out HAL_HCD_MspInit() and HAL_HCD_MspDeInit() as they were defined by CUBEMX in stm32u5xx_hal_msp.c <br>
 
 
